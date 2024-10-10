@@ -1,10 +1,12 @@
 package Contactor;
 
-public class Contractor {
+public class Contractor
+{
+	
 
-	public static void main(String[] args) 
+	public void show()
 	{
-       System.out.println("Hii Contactor");
+		System.out.println("hii contractor");
 	}
 
 }
