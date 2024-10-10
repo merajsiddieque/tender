@@ -6,7 +6,7 @@ public class Contractor
 
 	public void show()
 	{
-		System.out.println("hii contractor");
+       System.out.println("Hii Contactor");
 	}
 
 }
