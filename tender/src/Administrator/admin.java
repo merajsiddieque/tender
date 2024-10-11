@@ -1,10 +1,9 @@
-package Project_Manager;
+package Administrator;
 
 import java.util.Scanner;
 
-public class ProjectManager 
-{
-	public static void innerSwitching() {
+public class admin {
+    public static void innerSwitching() {
 		Scanner sc = new Scanner(System.in);
 
 		int innerChoices = sc.nextInt();
@@ -12,11 +11,11 @@ public class ProjectManager
 		switch (innerChoices) {
 			case 1:
 				System.out.println("\nEnter UserName");
-				String pmUserName = sc.nextLine();
+				String adminUserName = sc.nextLine();
 				System.out.println("Enter Password ");
-				String pmPassword = sc.nextLine();
+				String adminPassword = sc.nextLine();
 
-				if(pmUserName.equals("Project Manager") && pmPassword.equals("password"))
+				if(adminUserName.equals("admin") && adminPassword.equals("password"))
 				{
 					System.out.println("Welcome Admin");
 				}
