@@ -14,10 +14,7 @@ public class TenderMain
      {
     	this.choice=input;
      }
-
-
-
-        
+         
         
 	public static void main(String[] args) 
 	{
