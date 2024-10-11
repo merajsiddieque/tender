@@ -3,7 +3,7 @@ package Administrator;
 import java.util.Scanner;
 
 public class admin {
-	public void adminSwitching() {
+	public void adminSwitch() {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Admin Console");
 		System.out.println(" 1.Sign In\n 2.Exit\n ");

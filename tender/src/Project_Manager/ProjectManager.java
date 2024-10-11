@@ -3,7 +3,7 @@ package Project_Manager;
 import java.util.Scanner;
 
 public class ProjectManager {
-	public void pmSwitching() {
+	public void pmSwitch() {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Project Manager Console");
 		System.out.println(" 1.Sign In\n 2.Exit\n ");
