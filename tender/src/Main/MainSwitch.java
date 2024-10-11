@@ -1,49 +1,13 @@
 package Main;
+import Administrator.admin;
+import Project_Manager.ProjectManager;
 import java.util.Scanner;
 
-public class TenderMain {
-	public static void innerSwitching() {
-		Scanner sc = new Scanner(System.in);
+public class MainSwitch {
 
-		int innerChoices = sc.nextInt();
-		sc.nextLine();
-		switch (innerChoices) {
-			case 1:
-				System.out.println("\nEnter UserName");
-				String adminUserName = sc.nextLine();
-				System.out.println("Enter Password ");
-				String adminPassword = sc.nextLine();
-
-				if(adminUserName.equals("admin") && adminPassword.equals("password"))
-				{
-					System.out.println("Welcome Admin");
-				}
-				else
-				{
-					System.out.println("Invalid Credentials");
-				}
-
-				break;
-			case 2:
-				// try {
-				// 	Runtime.getRuntime().exec("cmd /c start cmd /c exit");
-					System.exit(0);
-				// } catch (IOException e) {
-				// 	e.printStackTrace();
-				// }
-				break;
-			default:
-				System.out.println("Invalid choice");
-				main(null);
-		}
-	}
-
-	public static void main(String[] args) 
+	public void mainSwitch() 
 	{
-		int choice;
-				
-		TenderMain cont = new TenderMain();		
-		TenderMain ind = new TenderMain();		
+		int choice;	
         Scanner sc = new Scanner(System.in);
 	 	System.out.println("Login Console");
 	 	System.out.println(" 1.Administrator\n 2.Project Manager\n 3.Contractor\n 4.Individual\n 5.Exit");
@@ -52,17 +16,14 @@ public class TenderMain {
 	 	switch (choice) 
 	 	{
 	    case 1: 
-	    	System.out.println("Admin Console");
-	    	System.out.println(" 1.Sign In\n 2.Exit\n ");
-	    	TenderMain admin = new TenderMain();
-			admin.innerSwitching();
+	    	
+	    	admin ad = new admin();
+			ad.adminSwitching();
 		    break;
 
 	    case 2: 
-	    	System.out.println("Project Manager Console");
-	    	System.out.println(" 1.Sign In\n 2.Exit\n ");
-			TenderMain pm = new TenderMain();		
-	    	pm.innerSwitching();
+		ProjectManager pm= new ProjectManager();
+		pm.pmSwitching();
 	    	break;
 
 	    case 3: 
@@ -106,7 +67,7 @@ public class TenderMain {
 	    	break;
 	    default:
 	      System.out.println("Invalid choice \n");
-	      main(null);
+	      
 	    	break;
 	 	}
 

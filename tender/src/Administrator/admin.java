@@ -3,16 +3,18 @@ package Administrator;
 import java.util.Scanner;
 
 public class admin {
-    public static void innerSwitching() {
+    public void adminSwitching() {
 		Scanner sc = new Scanner(System.in);
+        System.out.println("Admin Console");
+	    	System.out.println(" 1.Sign In\n 2.Exit\n ");
 
 		int innerChoices = sc.nextInt();
 		sc.nextLine();
 		switch (innerChoices) {
 			case 1:
-				System.out.println("\nEnter UserName");
+				System.out.println("\nEnter Admin UserName");
 				String adminUserName = sc.nextLine();
-				System.out.println("Enter Password ");
+				System.out.println("Enter Admin Password ");
 				String adminPassword = sc.nextLine();
 
 				if(adminUserName.equals("admin") && adminPassword.equals("password"))

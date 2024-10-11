@@ -4,21 +4,23 @@ import java.util.Scanner;
 
 public class ProjectManager 
 {
-	public static void innerSwitching() {
+	public void pmSwitching() {
 		Scanner sc = new Scanner(System.in);
+		System.out.println("Project Manager Console");
+	    	System.out.println(" 1.Sign In\n 2.Exit\n ");
 
 		int innerChoices = sc.nextInt();
 		sc.nextLine();
 		switch (innerChoices) {
 			case 1:
-				System.out.println("\nEnter UserName");
+				System.out.println("\nEnter Project Manager UserName");
 				String pmUserName = sc.nextLine();
-				System.out.println("Enter Password ");
+				System.out.println("Enter Project Amanager Password ");
 				String pmPassword = sc.nextLine();
 
 				if(pmUserName.equals("Project Manager") && pmPassword.equals("password"))
 				{
-					System.out.println("Welcome Admin");
+					System.out.println("Welcome Project Manager");
 				}
 				else
 				{
