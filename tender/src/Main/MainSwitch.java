@@ -1,6 +1,5 @@
 package Main;
-
-import Administrator.admin;
+import Administrator.adminManagement;
 import Contractor.Contractor;
 import Project_Manager.ProjectManager;
 import Viewer.viewer;
@@ -18,8 +17,8 @@ public class MainSwitch {
 		switch (choice) {
 		case 1:
 
-			admin ad = new admin();
-			ad.adminSwitch();
+			adminManagement ad = new adminManagement();
+			ad.Access();
 			break;
 
 		case 2:

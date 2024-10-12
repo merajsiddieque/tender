@@ -2,7 +2,9 @@ package Viewer;
 
 import java.util.Scanner;
 
-public class viewer 
+import User.user;
+
+public class viewer extends user
 {
 	public void showViewer()
 	{
@@ -11,6 +13,7 @@ public class viewer
 	System.out.println("Enter Your Name ");
 	String viewerName = sc.nextLine();
 	System.out.println("Welcome "+ viewerName + "!");
+	System.out.println("`");
 	}
 
 }

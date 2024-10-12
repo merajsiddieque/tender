@@ -2,7 +2,9 @@ package Contractor;
 
 import java.util.Scanner;
 
-public class Contractor {
+import User.user;
+
+public class Contractor extends user{
 
 	public void concSwitch() 
 	{
