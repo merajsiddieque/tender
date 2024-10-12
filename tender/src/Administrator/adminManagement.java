@@ -1,7 +1,8 @@
 package Administrator;
+import java.io.IOException;
 import java.util.Scanner;
 public class adminManagement extends admin {
-    public void Access(){
+    public void Access() throws IOException{
         adminManagement a = new adminManagement();
         Scanner sc = new Scanner(System.in);
     
@@ -9,7 +10,7 @@ public class adminManagement extends admin {
         manages(i, a);
         
     }
-    public void manages( int i,adminManagement a){
+    public void manages( int i,adminManagement a) throws IOException{
         Scanner sc = new Scanner(System.in);
         switch(i){
             case 1:

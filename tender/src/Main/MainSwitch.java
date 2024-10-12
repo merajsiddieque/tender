@@ -3,11 +3,13 @@ import Administrator.adminManagement;
 import Contractor.Contractor;
 import Project_Manager.ProjectManager;
 import Viewer.viewer;
+
+import java.io.IOException;
 import java.util.Scanner;
 
 public class MainSwitch {
 
-	public void mainSwitch() {
+	public void mainSwitch() throws IOException {
 		int choice;
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Login Console");
@@ -33,6 +35,7 @@ public class MainSwitch {
 		case 4:
 			viewer vw = new viewer();
 			vw.showViewer();
+			vw.viewSwitch();
 
 		case 5:
 			System.exit(0);

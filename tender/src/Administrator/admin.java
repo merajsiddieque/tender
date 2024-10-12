@@ -1,9 +1,10 @@
 package Administrator;
+import java.io.IOException;
 import java.util.Scanner;
 import Main.MainSwitch;
 import User.user;
 public class admin extends user{
-	public void ADMainSwitch(){
+	public void ADMainSwitch() throws IOException{
 		MainSwitch ms = new MainSwitch();
 		ms.mainSwitch();
 	}

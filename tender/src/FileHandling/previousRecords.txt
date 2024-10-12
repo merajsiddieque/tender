@@ -1,0 +1,12 @@
+        TenderName	                   Company	            ProjectManager	     Budget  	   Year
+        
+Highway Expansion Project	      Infrastructure Corp	      John Davis	   $5,000,000      2023
+Solar Power Plant Installation	      Green Energy Solutions          Sarah Johnson	   $12,000,000	   2024
+Hospital Renovation	              HealthCare Builders	      Michael Lee	   $08,500,000	   2023
+Airport Terminal Construction	      Aviation Development Inc.       Emma Thompson        $25,000,000	   2022
+Smart City Infrastructure	      FutureTech Urban Solutions      David Kim	           $30,000,000     2025
+University Expansion	              EduBuild Group                  Olivia Martinez	   $15,000,000     2024
+Wastewater Treatment Plant	      AquaClean Systems	              Kevin Brown	   $10,000,000	   2023
+High-Speed Rail Project	              RailWorks Corporation           William Carter	   $40,000,000	   2025
+Coastal Defense Construction	      OceanGuard Enterprises	      Emily Nguyen	   $18,000,000	   2024
+Data Center Construction              TechInfra Builders	      Robert Harris	   $20,000,000	   2023
