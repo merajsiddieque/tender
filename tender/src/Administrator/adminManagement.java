@@ -1,7 +1,8 @@
 package Administrator;
+import java.io.IOException;
 import java.util.Scanner;
 public class adminManagement extends admin {
-    public void Access(){
+    public void Access() throws IOException{
         adminManagement a = new adminManagement();
         Scanner sc = new Scanner(System.in);
     
@@ -9,7 +10,7 @@ public class adminManagement extends admin {
         manages(i, a);
         
     }
-    public void manages( int i,adminManagement a){
+    public void manages( int i,adminManagement a) throws IOException{
         Scanner sc = new Scanner(System.in);
         switch(i){
             case 1:
@@ -18,12 +19,39 @@ public class adminManagement extends admin {
             switch (x) {
                 case 1:
                     // .addTender
+                    System.out.println(".addTender Action Done.");
+                    System.out.println("1.Go back\n 2.Logout");
+                    int m = sc.nextInt();
+                    if (m ==1 ){
+                        a.manages(i, a);
+                    }
+                    else{
+                        a.ADMainSwitch();
+                    }
                     break;
                 case 2:
                     // .deleteTender
+                    System.out.println("deleteTender Action Done.");
+                    System.out.println("1.Go back \n2.Logout");
+                    int n = sc.nextInt();
+                    if (n ==1 ){
+                        a.manages(i, a);
+                    }
+                    else{
+                        a.ADMainSwitch();
+                    }
                     break;
                 case 3:
                     // viewTender
+                    System.out.println("viewTender Action Done.");
+                    System.out.println("1.Go back \n2.Logout");
+                    int o = sc.nextInt();
+                    if (o ==1 ){
+                        a.manages(i, a);
+                    }
+                    else{
+                        a.ADMainSwitch();
+                    }
                     break;
                 case 4:
                     a.AfterAdmin();

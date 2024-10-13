@@ -1,8 +1,9 @@
 package passwords;
 import java.io.BufferedWriter;
 import java.io.BufferedReader;
-import java.io.FileWriter;
+import java.io.BufferedWriter;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -12,19 +13,20 @@ public class password {
     // Declare the HashMap at the class level
     private static HashMap<String, String> passes = ReadStringHashPairs();
 
-    public static void main(String[] args) {
-        // Example usage of signUp and signin methods
-       signUp("user1", "password");
-//        signin("user1", "passwor");
-//        printFileContent();
-    }
+//     public static void main(String[] args) {
+//         // Example usage of signUp and signin methods
+//        signUp("user1", "password");
+//     //    signin("user1", "password");
+// //        signin("user1", "passwor");
+// //        printFileContent();
+//     }
 
     public static boolean signUp(String username, String pass) {
-        String filePath = "passwords_store.txt";
-        if(passes.containsKey(username)) {
-        	System.out.println("The username is already taken");
-        	return false;
-        }
+        String filePath = "tender\\src\\passwords\\passwords_store.txt";
+        // if(passes.containsKey(username)) {
+        // 	System.out.println("The username is already taken");
+        // 	return false;
+        // }
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath, true))) { // Append mode
             String hashValue = sha256(pass);
             writer.write(String.format("\"%s\" : \"%s\"", username, hashValue));
@@ -78,7 +80,7 @@ public class password {
     }
 
     public static HashMap<String, String> ReadStringHashPairs() {
-        String filePath = "passwords_store.txt";
+        String filePath = "tender\\src\\passwords\\passwords_store.txt";
         HashMap<String, String> stringHashPairs = new HashMap<>();
         try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
             String line;
