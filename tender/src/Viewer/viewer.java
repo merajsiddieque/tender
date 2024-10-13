@@ -1,25 +1,17 @@
 package Viewer;
-
 import FileHandling.FileHandling;
 import User.user;
 import java.io.IOException;
 import java.util.Scanner;
-
 public class viewer extends user
 {
 	Scanner sc = new Scanner(System.in);
-	
-	
-	
 	public void showViewer()
 	{
 	System.out.println("Enter Your Name ");
 	String viewerName = sc.nextLine();
 	System.out.println("Welcome "+ viewerName + "!");
 	}
-	
-	
-	
 	public void viewSwitch() throws IOException 
 	{
 		System.out.println(" 1.Previous Year Tenders\n 2.Newly Filed Tenders\n 3.Exit\n ");
@@ -39,12 +31,6 @@ public class viewer extends user
 			break;
 		default:
 			System.out.println("Not Valid Choice ! Try again");
-		}
-		
+		}	
 	}
-	
-	
-	
-	
-
 }
