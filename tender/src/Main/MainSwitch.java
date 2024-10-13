@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 public class MainSwitch {
 
-	public void mainSwitch() throws IOException {
+	public void mainSwitch() {
 		int choice;
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Login Console");

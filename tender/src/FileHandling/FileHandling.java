@@ -12,7 +12,7 @@ import java.util.List;
 
 public class FileHandling 
 {
-	public void viewPreviousRecords() throws IOException
+	public void viewPreviousRecords() 
 	{
 		Path path = Paths.get("tender\\src\\FileHandling\\previousRecords.txt");
 		try 

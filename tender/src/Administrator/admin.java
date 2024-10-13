@@ -4,6 +4,7 @@ import java.util.Scanner;
 import Main.MainSwitch;
 import User.user;
 public class admin extends user{
+	Scanner sc = new Scanner(System.in);
 	public void ADMainSwitch(){
 		MainSwitch ms = new MainSwitch();
 		ms.mainSwitch();

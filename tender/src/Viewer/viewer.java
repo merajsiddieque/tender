@@ -20,7 +20,7 @@ public class viewer extends user
 	
 	
 	
-	public void viewSwitch() throws IOException 
+	public void viewSwitch() 
 	{
 		System.out.println(" 1.Previous Year Tenders\n 2.Newly Filed Tenders\n 3.Exit\n ");
 		int Choice = sc.nextInt();
