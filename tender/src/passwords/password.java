@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.HashMap;
-
+import java.util.Scanner;
 public class password {
     // Declare the HashMap at the class level
     private static HashMap<String, String> passes = ReadStringHashPairs();
@@ -96,5 +96,25 @@ public class password {
             e.printStackTrace();
         }
         return stringHashPairs;
+    }
+    public static void forgot_password(){
+        Scanner sc = new Scanner(System.in);
+        String username;
+        System.out.println("Enter the username");
+        username = sc.nextLine();
+        sc.nextLine();
+        System.out.println("Enter Your old password");
+        String user_pass = sc.nextLine();
+        if(passes.get(username) != sha256(user_pass)){
+            passes.remove(username);
+            System.out.println("Enter Your new password");
+            String new_pass = sc.nextLine();
+            passes.put(username,sha256(new_pass));
+            System.out.println("Succefully updated your password");
+        }
+        else{
+          System.out.println("Invalid username or password");
+        }
+        sc.close();
     }
 }

@@ -1,6 +1,7 @@
 package Main;
 import Administrator.adminManagement;
 import Contractor.Contractor;
+import Project_Manager.PM_Managementt;
 import Project_Manager.ProjectManager;
 import Viewer.viewer;
 
@@ -24,8 +25,8 @@ public class MainSwitch {
 			break;
 
 		case 2:
-			ProjectManager pm = new ProjectManager();
-			pm.pmSwitch();
+			PM_Managementt pm = new PM_Managementt();
+			pm.Access();
 			break;
 
 		case 3:
