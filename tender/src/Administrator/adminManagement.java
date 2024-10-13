@@ -18,12 +18,39 @@ public class adminManagement extends admin {
             switch (x) {
                 case 1:
                     // .addTender
+                    System.out.println(".addTender Action Done.");
+                    System.out.println("1.Go back\n 2.Logout");
+                    int m = sc.nextInt();
+                    if (m ==1 ){
+                        a.manages(i, a);
+                    }
+                    else{
+                        a.ADMainSwitch();
+                    }
                     break;
                 case 2:
                     // .deleteTender
+                    System.out.println("deleteTender Action Done.");
+                    System.out.println("1.Go back \n2.Logout");
+                    int n = sc.nextInt();
+                    if (n ==1 ){
+                        a.manages(i, a);
+                    }
+                    else{
+                        a.ADMainSwitch();
+                    }
                     break;
                 case 3:
                     // viewTender
+                    System.out.println("viewTender Action Done.");
+                    System.out.println("1.Go back \n2.Logout");
+                    int o = sc.nextInt();
+                    if (o ==1 ){
+                        a.manages(i, a);
+                    }
+                    else{
+                        a.ADMainSwitch();
+                    }
                     break;
                 case 4:
                     a.AfterAdmin();
