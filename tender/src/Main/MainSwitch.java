@@ -4,7 +4,6 @@ import Contractor.Contractor;
 import Project_Manager.PM_Managementt;
 import Project_Manager.ProjectManager;
 import Viewer.viewer;
-
 import java.io.IOException;
 import java.util.Scanner;
 
@@ -32,12 +31,13 @@ public class MainSwitch {
 		case 3:
 			Contractor conc = new Contractor();
 			conc.concSwitch();
+			break;
 
 		case 4:
 			viewer vw = new viewer();
 			vw.showViewer();
-			vw.viewSwitch();
-
+			vw.viewSwitch();			
+            break;
 		case 5:
 			System.exit(0);
 			break;

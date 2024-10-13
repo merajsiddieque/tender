@@ -28,7 +28,36 @@ public class FileHandling
 				e.printStackTrace();
 			}
 	}	
-
+    public void viewActiveRecords(){
+		Path path = Paths.get("tender\\src\\FileHandling\\activeRecords.txt");
+		try 
+		{
+			List<String> readAllLines = Files.readAllLines(path);
+			for (String line : readAllLines)
+			{
+				System.out.println(line);
+			}
+		}
+		catch (IOException e)
+			{
+				e.printStackTrace();
+			}
+	}
+	public void viewUpcomingTenders(){
+		Path path = Paths.get("tender\\src\\FileHandling\\UpcomingTenders.txt");
+		try 
+		{
+			List<String> readAllLines = Files.readAllLines(path);
+			for (String line : readAllLines)
+			{
+				System.out.println(line);
+			}
+		}
+		catch (IOException e)
+			{
+				e.printStackTrace();
+			}
+	}
 	public void headerTitle() throws IOException
 	{
 		FileReader fr = new FileReader("tender\\src\\FileHandling\\previousRecords.txt");
