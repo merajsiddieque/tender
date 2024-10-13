@@ -1,7 +1,6 @@
 package passwords;
 import java.io.BufferedWriter;
 import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -9,6 +8,8 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.HashMap;
 import java.util.Scanner;
+
+// import User.user;
 public class password {
     // Declare the HashMap at the class level
     private static HashMap<String, String> passes = ReadStringHashPairs();
@@ -97,11 +98,12 @@ public class password {
         }
         return stringHashPairs;
     }
-    public static void forgot_password(){
+    public static void forgot_password(String prefix){
         Scanner sc = new Scanner(System.in);
         String username;
         System.out.println("Enter the username");
         username = sc.nextLine();
+        username = prefix + username;
         sc.nextLine();
         System.out.println("Enter Your old password");
         String user_pass = sc.nextLine();

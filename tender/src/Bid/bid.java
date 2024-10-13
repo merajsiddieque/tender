@@ -1,10 +1,14 @@
 package Bid;
 
 public class bid {
-    int bidID;
-    int tenderID;
-    int contractorID;
-    double bidAmount;
+    public int bidID;
+    public int tenderID;
+    private int contractorID;
+    private double bidAmount;
+    public double rating;
+    private void custom_calculate_rating(){
+        
+    }
     public bid(){
         System.out.println("Bidding Section.");
     }
