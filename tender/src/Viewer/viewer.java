@@ -14,7 +14,7 @@ public class viewer extends user
 	System.out.println("Welcome "+ viewerName + "!");
 	}
 	public void afterVW(){
-		System.out.println("1.Go Back \n 2. Logout\n");
+		System.out.println("1.Go Back \n 2. Exit\n");
 			int x = sc.nextInt();
 			if (x == 1){
                 viewSwitch();
@@ -31,7 +31,7 @@ public class viewer extends user
 	public void viewSwitch()
 
 	{
-		System.out.println(" 1.Previous Tenders\n 2.Active Filed Tenders\n 3. Upcoming Tenders 4.Exit\n ");
+		System.out.println(" 1.Previous Tenders\n 2.Active Filed Tenders\n 3. Upcoming Tenders \n4.Exit\n ");
 		int Choice = sc.nextInt();
 		FileHandling fh = new FileHandling();
 		switch (Choice) 
@@ -45,10 +45,11 @@ public class viewer extends user
 		   fh.viewActiveRecords();
 		   afterVW();
 			break;
-		case 3:
+		/*case 3:
 			fh.viewUpcomingTenders();
 			afterVW();
 			 break;	
+			 */
 		case 4:
 			System.exit(0);
 			break;

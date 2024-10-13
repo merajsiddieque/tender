@@ -14,7 +14,7 @@ public class FileHandling
 {
 	public void viewPreviousRecords() 
 	{
-		Path path = Paths.get("tender\\src\\FileHandling\\previousRecords.txt");
+		Path path = Paths.get("src\\FileHandling\\previousRecords.txt");
 		try 
 		{
 			List<String> readAllLines = Files.readAllLines(path);
@@ -29,7 +29,7 @@ public class FileHandling
 			}
 	}	
     public void viewActiveRecords(){
-		Path path = Paths.get("tender\\src\\FileHandling\\activeRecords.txt");
+		Path path = Paths.get("src\\FileHandling\\activeRecords.txt");
 		try 
 		{
 			List<String> readAllLines = Files.readAllLines(path);
@@ -43,8 +43,8 @@ public class FileHandling
 				e.printStackTrace();
 			}
 	}
-	public void viewUpcomingTenders(){
-		Path path = Paths.get("tender\\src\\FileHandling\\UpcomingTenders.txt");
+	/*public void viewUpcomingTenders(){
+		Path path = Paths.get("src\\FileHandling\\UpcomingTenders.txt");
 		try 
 		{
 			List<String> readAllLines = Files.readAllLines(path);
@@ -58,6 +58,7 @@ public class FileHandling
 				e.printStackTrace();
 			}
 	}
+			*/
 	public void headerTitle() throws IOException
 	{
 		FileReader fr = new FileReader("tender\\src\\FileHandling\\previousRecords.txt");
