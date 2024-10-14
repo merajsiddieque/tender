@@ -2,7 +2,7 @@ package Administrator;
 import java.io.IOException;
 import java.util.Scanner;
 public class adminManagement extends admin {
-    public void Access() throws IOException{
+    public void Access() {
         adminManagement a = new adminManagement();
         Scanner sc = new Scanner(System.in);
     
@@ -10,7 +10,7 @@ public class adminManagement extends admin {
         manages(i, a);
         
     }
-    public void manages( int i,adminManagement a) throws IOException{
+    public void manages( int i,adminManagement a) {
         Scanner sc = new Scanner(System.in);
         switch(i){
             case 1:
@@ -65,15 +65,42 @@ public class adminManagement extends admin {
             switch (y) {
                 case 1:
                     // .assignPM
+                    System.out.println(".assign PM Action Done.");
+                    System.out.println("1.Go back\n 2.Logout");
+                    int m = sc.nextInt();
+                    if (m ==1 ){
+                        a.manages(2, a);
+                    }
+                    else{
+                        a.ADMainSwitch();
+                    }
                     break;
                 case 2:
                     // .ViewPMnotassign
+                    System.out.println(".View not assigned PM Action Done.");
+                    System.out.println("1.Go back\n 2.Logout");
+                    int n = sc.nextInt();
+                    if (n ==1 ){
+                        a.manages(2, a);
+                    }
+                    else{
+                        a.ADMainSwitch();
+                    }
                     break;
                 case 3:
                     // viewPM
+                    System.out.println(".assign PM Action Done.");
+                    System.out.println("1.Go back\n 2.Logout");
+                    int o = sc.nextInt();
+                    if (o ==1 ){
+                        a.manages(2, a);
+                    }
+                    else{
+                        a.ADMainSwitch();
+                    }
                     break;
                 case 4:
-                  a.manages(i, a);
+                    a.AfterAdmin();
                   break;    
                 default:
                     break;
@@ -84,18 +111,45 @@ public class adminManagement extends admin {
             switch (z) {
                 case 1:
                     // .getContractors
+                    System.out.println(".get contractors Action Done.");
+                    System.out.println("1.Go back\n 2.Logout");
+                    int m = sc.nextInt();
+                    if (m ==1 ){
+                        a.manages(3, a);
+                    }
+                    else{
+                        a.ADMainSwitch();
+                    }
                     break;
                 case 2:
                     // .overview details
+                    System.out.println(".overview details Action Done.");
+                    System.out.println("1.Go back\n 2.Logout");
+                    int n = sc.nextInt();
+                    if (n ==1 ){
+                        a.manages(3, a);
+                    }
+                    else{
+                        a.ADMainSwitch();
+                    }
                     break;
                 case 3:
-                    a.manages(i, a);
+                    a.AfterAdmin();
                     break;
                 default:
                     break;
             }
             case 4:
              System.out.println("Complaint Management.");
+             System.out.println(". Done.");
+             System.out.println("1.Go back\n 2.Logout");
+             int m = sc.nextInt();
+             if (m ==1 ){
+                 a.AfterAdmin();
+             }
+             else{
+                 a.ADMainSwitch();
+             }
              break;
             case 5:
               a.ADMainSwitch();  

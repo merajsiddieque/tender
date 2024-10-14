@@ -1,0 +1,6 @@
+       Tender Name                  Company	                 Project Manager	    Budget	         Year
+Highway Expansion Project	     Infrastructure Corp	      John Davis	      $5,000,000	     2023
+Hospital Renovation	             HealthCare Builders	      Michael Lee         $8,500,000	     2023
+Airport Terminal Construction	 Aviation Development Inc.	  Emma Thompson	      $25,000,000	     2022
+Wastewater Treatment Plant	     AquaClean Systems	          Kevin Brown	      $10,000,000	     2023
+Data Center Construction	     TechInfra Builders	          Robert Harris	      $20,000,000        2023

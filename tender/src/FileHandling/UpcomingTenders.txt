@@ -1,0 +1,6 @@
+        Tender Name	                    Company	                Project Manager	    Budget	    Year
+Solar Power Plant Installation	  Green Energy Solutions	     Sarah Johnson	  $12,000,000	2024
+Smart City Infrastructure	      FutureTech Urban Solutions	 David Kim	      $30,000,000	2025
+University Expansion	          EduBuild Group	             Olivia Martinez  $15,000,000	2024
+High-Speed Rail Project	          RailWorks Corporation	         William Carter	  $40,000,000	2025
+Coastal Defense Construction	  OceanGuard Enterprises	     Emily Nguyen	  $18,000,000	2024

@@ -15,6 +15,4 @@ public abstract class user {
      public String get_us_id(){
          return user_id;
      }
-      public void login(){};
-      public void logout(){};
 }

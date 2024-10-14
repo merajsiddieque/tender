@@ -12,7 +12,7 @@ public class ProjectManager extends user {
 	public int  AfterPM(){
         Scanner sc = new Scanner(System.in);
 		System.out.println("Welcome Project Manager");
-		System.out.println("1.View Assigned Tender \n 2.View Received Bids \n 3.Sort the bids \n 4. File Complaints.\n 5.View Contractors\n 6. Go back");
+		System.out.println("1.View Assigned Tender \n 2.View Received Bids \n 3.Sort the bids \n 4. File Complaints.\n 5. Go back");
 		int x = sc.nextInt();
 		return x;	
 	}
