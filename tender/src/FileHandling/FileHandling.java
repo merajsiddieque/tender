@@ -69,11 +69,17 @@ public class FileHandling
 	
 	public void updatePreviousRecords() throws IOException
 	{
-		FileWriter fw = new FileWriter("C:\\Users\\meraj\\git\\tender\\tender\\src\\FileHandling\\previousRecords.txt");
+		FileWriter fw = new FileWriter("tender\\src\\FileHandling\\previousRecords.txt");
 		BufferedWriter bw = new BufferedWriter(fw);
 		bw.close();
 	}
 	
+	public void upComingTender() throws IOException
+	{
+		FileReader fr = new FileReader("tender\\src\\FileHandling\\previousRecords.txt");
+		BufferedReader br = new BufferedReader(fr);
+		System.out.println(br.readLine());
+	}
 	
 
 }

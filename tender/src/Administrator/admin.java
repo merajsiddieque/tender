@@ -1,8 +1,7 @@
 package Administrator;
-import java.io.IOException;
-import java.util.Scanner;
 import Main.MainSwitch;
 import User.user;
+import java.util.Scanner;
 public class admin extends user{
 	Scanner sc = new Scanner(System.in);
 	public void ADMainSwitch(){
@@ -18,9 +17,7 @@ public class admin extends user{
 	public int  adminSwitch() {
 		System.out.println("Admin Console");
 		System.out.println(" 1.Sign In\n 2.Exit\n ");
-		sc.nextLine();
 		int innerChoices = sc.nextInt();
-		sc.nextLine();
 		switch (innerChoices) {
 		case 1:
 			System.out.println("\nEnter Admin UserName");
