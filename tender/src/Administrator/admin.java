@@ -21,8 +21,8 @@ public class admin extends user{
 		Scanner z = new Scanner(System.in);
 		System.out.println("Admin Console");
 		System.out.println(" 1.Sign In\n 2.Exit\n ");
-		int innerChoices = sc.nextInt();
-		switch (innerChoices) {
+		int adminChoices = sc.nextInt();
+		switch (adminChoices) {
 		case 1:
 			System.out.println("\nEnter Admin UserName");
 			String adminUserName = y.nextLine();
