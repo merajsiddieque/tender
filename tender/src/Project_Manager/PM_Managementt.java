@@ -60,17 +60,6 @@ public class PM_Managementt extends ProjectManager {
                         }
              break;
             case 5:
-               System.out.println("View Contractors");
-               System.out.println("1.Go back\n 2.Logout");
-               int q = sc.nextInt();
-                           if (q ==1 ){
-                            b.PMmanages(x, b);
-                           }
-                           else{
-                               b.PMMainSwitch();
-                           }
-               break;
-            case 6:
                b.PMMainSwitch();
                break;
     
